@@ -1,5 +1,9 @@
 function calculate(input) {
-    return 0;
+    if(input==" "){
+        return "0";
+    }else{
+        return input;
+    }
 }
 
 export default calculate;
