@@ -27,4 +27,11 @@ describe('CALCULADORA DE STRINGS', ()=>{
         cy.get("#result").should("contain","14");
       });
     
+    it('devuelve la suma de 2 numeros separados por comas', () => {
+      cy.visit("/");
+      cy.get('#input').clear().type('1-2');
+      cy.get("#calc-form").submit();
+      cy.get("#result").should("contain","3");
+    });
+  
 });

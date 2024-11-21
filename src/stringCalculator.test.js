@@ -15,3 +15,11 @@ test('devuelve la suma de 2 numeros separados por comas', () => {
 test('devuelve la suma de 3 numeros separados por comas', () => {
   expect(calculate('2,4,8')).toBe("14");
 });
+
+test('devuelve la suma de 2 numeros separados por comas', () => {
+  expect(calculate('1-2')).toBe("3");
+});
+
+test('devuelve la suma de 3 numeros separados por comas', () => {
+expect(calculate('2-4-8')).toBe("14");
+});
